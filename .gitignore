@@ -1,0 +1,24 @@
+# Node.js
+/client/node_modules/
+/client/dist/
+/client/.env
+
+# Python
+/server/venv/
+/server/__pycache__/
+/server/db.sqlite3
+/server/*.pyc
+/server/.env
+
+# Django
+/server/staticfiles/
+/server/media/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+
+# System Files
+.DS_Store
+Thumbs.db
