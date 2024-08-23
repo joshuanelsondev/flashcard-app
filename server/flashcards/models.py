@@ -10,7 +10,7 @@ class Deck(models.Model):
         return self.name
 
 class Flashcard(models.Model):
-    deck = models.ForeignKey(Deck, related_name='flashcards', on_delete=model.CASCADE)
+    deck = models.ForeignKey(Deck, related_name='flashcards', on_delete=models.CASCADE)
     question = models.CharField(max_length=255)
     answer = models.TextField()
 

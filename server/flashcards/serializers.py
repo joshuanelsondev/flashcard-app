@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Flashcard
+from .models import Deck, Flashcard
 
 class DeckSerializer(serializers.ModelSerializer):
     class Meta:
