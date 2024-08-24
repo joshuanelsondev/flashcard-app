@@ -1,4 +1,4 @@
-// src/components/decks/Decks.jsx
+// src/components/decks/DeckList.jsx
 
 export default function Decks() {
   return (

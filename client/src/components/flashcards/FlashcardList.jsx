@@ -1,4 +1,4 @@
-// src/components/flashcards/Flashcards.jsx
+// src/components/flashcards/FlashcardList.jsx
 
 export default function Flashcards() {
   return (
