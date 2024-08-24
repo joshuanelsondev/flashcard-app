@@ -4,11 +4,11 @@ import Nav from './Nav.jsx'
 
 export default function Layout() {
   return (
-    <>
+    <main>
       <Nav />
       <div>
         <Outlet />
       </div>
-    </>
+    </main>
   )
 }
