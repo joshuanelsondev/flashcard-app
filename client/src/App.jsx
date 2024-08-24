@@ -1,15 +1,8 @@
-import Decks from './components/decks/Decks'
-import Flashcards from './components/flashcards/Flashcards'
-import './App.scss'
+import { RouterProvider } from 'react-router-dom'
+import router from './routes.jsx'
 
-function App() {
-  return (
-    <main>
-      <h1>Flashcards</h1>
-      <Decks />
-      <Flashcards />
-    </main>
-  )
+const App = () => {
+  return <RouterProvider router={router} />
 }
 
 export default App
