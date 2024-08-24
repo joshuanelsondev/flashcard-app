@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         element: <Decks />,
       },
       {
-        path: '/flashcards',
+        path: '/decks/:id/flashcards',
         element: <Flashcards />,
       },
     ],
