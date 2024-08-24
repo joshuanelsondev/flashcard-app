@@ -19,6 +19,15 @@ export default function DeckList() {
     fetchDecks()
   }, [])
 
+  const handleDelete = async (deckId) => {
+    try {
+      await deleteDeck(deckId)
+      setDecks(decks.filter((deck) => deck.id !== deckId))
+    } catch (error) {
+      console.error('Error deleting deck:', error)
+    }
+  }
+
   return (
     <div>
       <h1>Deck List</h1>
