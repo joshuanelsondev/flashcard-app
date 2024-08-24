@@ -1,11 +1,11 @@
 // src/components/Layout.jsx
 import { Outlet } from 'react-router-dom'
-import NewButton from './NewButton.jsx'
+import Nav from './Nav.jsx'
 
-export default function Layout () {
+export default function Layout() {
   return (
     <>
-      <NewButton />
+      <Nav />
       <div>
         <Outlet />
       </div>
