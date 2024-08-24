@@ -14,6 +14,11 @@ export const getDecks = async () => {
   }
 }
 
+export const getDeckById = async (deckId) => {
+  const response = await axios.get(`${API_BASE_URL}/decks/${deckId}/`)
+  return response.data
+}
+
 export const createDeck = async (deck) => {
   try {
     const response = await axios.post(`${API_BASE_URL}/decks/`, deck)
@@ -26,7 +31,7 @@ export const createDeck = async (deck) => {
 
 export const updateDeck = async (id, updatedDeck) => {
   try {
-    const response = await axios.post(
+    const response = await axios.put(
       `${API_BASE_URL}/decks/${id}`,
       updatedDeck
     )
@@ -47,9 +52,11 @@ export const deleteDeck = async (id) => {
   }
 }
 
-export const getFlashcards = async () => {
+export const getFlashcardsByDeck = async (deckId) => {
   try {
-    const response = await axios.get(`${API_BASE_URL}/flashcards/`)
+    const response = await axios.get(
+      `${API_BASE_URL}/flashcards/deck/${deckId}`
+    )
     return response.data
   } catch (error) {
     console.error('Error fetching flashcards:', error)
@@ -69,7 +76,7 @@ export const createFlashcard = async (flashcard) => {
 
 export const updateFlashcard = async (id, updatedFlashcard) => {
   try {
-    const response = await axios.post(
+    const response = await axios.put(
       `${API_BASE_URL}/flashcard/${id}`,
       updatedFlashcard
     )
