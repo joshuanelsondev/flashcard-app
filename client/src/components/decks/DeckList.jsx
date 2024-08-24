@@ -1,6 +1,6 @@
 // src/components/decks/DeckList.jsx
 
-export default function Decks() {
+export default function DeckList() {
   return (
     <div>
       <h1>Decks</h1>
